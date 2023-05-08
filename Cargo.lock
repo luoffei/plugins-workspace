@@ -267,8 +267,7 @@ dependencies = [
 [[package]]
 name = "auto-launch"
 version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5904a4d734f0235edf29aab320a14899f3e090446e594ff96508a6215f76f89c"
+source = "git+https://github.com/luoffei/auto-launch?branch=elevate_privileges#ffb8db38cf067a86ada3832086fb841d66ae0867"
 dependencies = [
  "dirs",
  "thiserror",

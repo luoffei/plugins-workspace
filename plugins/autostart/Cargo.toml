@@ -15,4 +15,7 @@ serde_json.workspace = true
 tauri.workspace = true
 log.workspace = true
 thiserror.workspace = true
-auto-launch = "0.4"
+auto-launch = { git = "https://github.com/luoffei/auto-launch", branch = "elevate_privileges" }
+
+[features]
+elevate_privileges = []

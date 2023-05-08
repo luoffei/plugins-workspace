@@ -110,6 +110,8 @@ pub fn init<R: Runtime>(
 
             #[cfg(windows)]
             builder.set_app_path(&current_exe.display().to_string());
+            #[cfg(all(windows, feature = "elevate_privileges"))]
+            builder.set_elevate_privileges(true);
             #[cfg(target_os = "macos")]
             {
                 // on macOS, current_exe gives path to /Applications/Example.app/MacOS/Example
